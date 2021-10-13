@@ -1,0 +1,129 @@
+                                                        /* Root / Body */
+:root{
+    --bg-color-main: #141414;
+    --main-red: #E50914;
+    --main-red-dark: rgba(229, 9, 20, .60);
+    --main-white-nav: #AAA;
+    --main-white-light: #ffffff;
+    --main-bg-text-area:rgba(0,0,0,.3);
+    --bttn-black-dark: rgba(0,0,0,.75);
+    --bttn-black: rgb(32, 32, 32);
+}
+
+body{
+    background: var(--bg-color-main);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--main-white-light);
+}
+
+                                                        /* Header */
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--main-white-nav);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--main-white-light);
+}
+
+header .logo{
+    color: var(--main-red);
+    font-family: 'Arial Black', Times;
+    font-size: 2.5rem;
+    margin-left: .4rem;
+}
+
+.call{
+    display:flex;
+    margin: .5rem;
+    color: var(--main-white-nav);
+    font-weight: 300;
+    padding: .2rem;
+}
+
+#enf{
+    margin-left: .3rem;
+    font-weight: 400;
+    color: var(--main-white-light);
+}
+
+                                                        /* Body */
+
+/* Hero */
+
+.hot-title{
+    font-size: 3.5rem;
+}
+
+.hot{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5) 100%), url(../img/bg-round6.jpg);
+    background-size:cover;
+
+    font-size: 16px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hot .hot-desc{
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.hot-wrapper{
+    margin-left: 3rem;
+    width: 60%;
+    background-color: var(--main-bg-text-area);
+}
+
+/* Botões */
+
+.button{
+    width:15rem;
+    height: 3rem;
+
+    background-color: var(--bttn-black-dark);
+    color: var(--main-white-light);
+    border: none;
+
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+
+    font-size: .8rem;
+}
+
+.button i{
+    margin-right: .3rem;
+}
+
+.button:hover{
+    background: var(--main-white-light);
+    color: black;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+/* Images */
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel{
+    margin-top: 2rem;
+}
